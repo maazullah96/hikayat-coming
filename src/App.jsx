@@ -8,10 +8,15 @@ import {
   faPinterest,
   faYoutube,
   faXTwitter,
+  faAndroid,
 } from "@fortawesome/free-brands-svg-icons"
+import {
+  faMobileAndroid,
+  faMobileAndroidAlt,
+  faTabletAndroid,
+} from "@fortawesome/free-solid-svg-icons"
 
 const App = () => {
-  
   return (
     <Container fluid className="hikayat-background position-relative">
       {/* Diagonal Tie Link */}
@@ -66,6 +71,14 @@ const App = () => {
                 className="social-icon"
               >
                 <FontAwesomeIcon icon={faYoutube} size="2xl" color="red" />
+              </a>
+            </Col>
+            <Col xs="auto">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.nebulark.hikayatapp&pcampaignid=web_share"
+                className="social-icon"
+              >
+                <FontAwesomeIcon icon={faAndroid} size="2xl" color="green" />
               </a>
             </Col>
           </Row>
