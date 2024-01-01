@@ -9,6 +9,7 @@ import {
   faYoutube,
   faXTwitter,
   faAndroid,
+  faGooglePlay,
 } from "@fortawesome/free-brands-svg-icons"
 import {
   faMobileAndroid,
@@ -16,6 +17,8 @@ import {
   faTabletAndroid,
 } from "@fortawesome/free-solid-svg-icons"
 
+import playstore from "./assets/playstore.svg"
+import instagram from "./assets/instagram.svg"
 const App = () => {
   return (
     <Container fluid className="hikayat-background position-relative">
@@ -54,7 +57,9 @@ const App = () => {
                 href="https://www.instagram.com/hikayat_app/"
                 className="social-icon instagram-icon"
               >
-                <FontAwesomeIcon icon={faInstagram} size="2xl" />
+                <img src={instagram} alt="Instagram" width={35} height={35} />
+
+                {/* <FontAwesomeIcon icon={faInstagram} size="2xl" color="black" /> */}
               </a>
             </Col>
             <Col xs="auto">
@@ -78,7 +83,8 @@ const App = () => {
                 href="https://play.google.com/store/apps/details?id=com.nebulark.hikayatapp&pcampaignid=web_share"
                 className="social-icon"
               >
-                <FontAwesomeIcon icon={faAndroid} size="2xl" color="green" />
+                <img src={playstore} alt="PlayStore" width={25} height={25} />
+                {/* <FontAwesomeIcon icon={faGooglePlay} size="2xl" color="green" /> */}
               </a>
             </Col>
           </Row>
